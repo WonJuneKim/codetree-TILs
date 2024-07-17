@@ -1,6 +1,6 @@
 const fs = require("fs");
 
-input = fs.readFileSync(0).toString();
+let input = fs.readFileSync(0).toString();
 
 input = Number(input);
 
