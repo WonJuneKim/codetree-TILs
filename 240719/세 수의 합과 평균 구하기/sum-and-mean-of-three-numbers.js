@@ -4,7 +4,7 @@ let input = fs.readFileSync(0).toString().trim().split(" ");
 let a = Number(input[0]);
 let b = Number(input[1]);
 let c = Number(input[2]);
-let average = (a+b+c) / 3;
+let average = parseInt((a+b+c) / 3);
 
 console.log(a+b+c);
-console.log(average.toFixed(0));
+console.log(average);
