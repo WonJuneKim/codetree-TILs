@@ -5,16 +5,16 @@ let a = Number(input[0]);
 let b = Number(input[1]);
 let c = Number(input[2]);
 
-if (a>b && a>c) {
-    if(b>c){
+if (a>b) {
+    if (b>c) {
         console.log(b);
     } else {
-        console.log(c);
+        console.log(a);
     }
- } else if(a>b && a<c) {
-    console.log(a);
- } else if(a<b && b<c) {
-    console.log(b);
- } else if(a<b && c<a) {
-    console.log(a);
- }
+} else {
+    if (b>c) {
+        console.log(c);
+    } else {
+        console.log(b);
+    }
+}
