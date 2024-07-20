@@ -19,5 +19,9 @@ if(cold1==="Y" && temp1>=37){
         console.log("N");
     }
 } else{
+   if((cold2==="Y" && temp2>=37) && (cold3==="Y" && temp3>=37)) {
+    console.log("E");
+   } else {
     console.log("N");
+   }
 }
