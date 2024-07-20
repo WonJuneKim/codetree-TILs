@@ -8,9 +8,11 @@ let c = Number(input[2]);
 if (a>b) {
     if (b>c) {
         console.log(b);
-    } else {
+    } else if (a<c) {
         console.log(a);
-    }
+    } else {
+        console.log(c);
+    } 
 } else {
     if (b<c) {
         console.log(b);
