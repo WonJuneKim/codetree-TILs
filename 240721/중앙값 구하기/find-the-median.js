@@ -9,10 +9,8 @@ let middle = (a+b+c)/3;
 
 if (a===middle) {
     console.log(a);
+} else if (b===middle) {
+    console.log(b);
 } else {
-    if (b===middle){
-        console.log(b);
-    } else {
-        console.log(c);
-    }
+    console.log(c);
 }
