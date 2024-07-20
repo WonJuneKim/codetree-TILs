@@ -9,6 +9,6 @@ let genderA = arr1[1];
 let ageB = Number(arr2[0]);
 let genderB = arr2[1];
 
-if ((ageA >=19 && genderA =="M") ||(ageB >=19 && genderB =="M") ) {
+if ((ageA >=19 && genderA ==="M") ||(ageB >=19 && genderB ==="M") ) {
     console.log(1);
 }
