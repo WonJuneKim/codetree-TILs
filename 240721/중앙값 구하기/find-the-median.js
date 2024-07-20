@@ -19,6 +19,6 @@ if (a>b) {
     } else if(a<c) {
         console.log(c);
     } else {
-        console.log(b);
+        console.log(a);
     }
 }
