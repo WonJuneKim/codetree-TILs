@@ -5,7 +5,7 @@ let a = Number(input);
 
 if (a>=1.0) {
     console.log("High");
-} else if (a>0.5) {
+} else if (a>=0.5) {
     console.log("Middle");
 } else {
     console.log("Low");
