@@ -12,7 +12,9 @@ if (a>b) {
         console.log(a);
     }
 } else {
-    if (b>c) {
+    if (b<c) {
+        console.log(b);
+    } else if(a<c) {
         console.log(c);
     } else {
         console.log(b);
