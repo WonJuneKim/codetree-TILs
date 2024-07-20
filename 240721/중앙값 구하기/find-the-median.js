@@ -5,12 +5,16 @@ let a = Number(input[0]);
 let b = Number(input[1]);
 let c = Number(input[2]);
 
-let middle = (a+b+c)/3;
-
-if (a===middle) {
+if (a>b && a>c) {
+    if(b>c){
+        console.log(b);
+    } else {
+        console.log(c);
+    }
+ } else if(a>b && a<c) {
     console.log(a);
-} else if (b===middle) {
+ } else if(a<b && b<c) {
     console.log(b);
-} else {
-    console.log(c);
-}
+ } else if(a<b && c<a) {
+    console.log(a);
+ }
