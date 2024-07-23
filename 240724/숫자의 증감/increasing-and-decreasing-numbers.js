@@ -10,7 +10,7 @@ if (c==="A") {
         result += (i+ " ");
     }
 } else {
-    for(let i=n; i>=n; i-- ) {
+    for(let i=n; i>=1; i-- ) {
         result  += (i+ " ");
     }
 }
