@@ -8,7 +8,7 @@ let result= "";
 result += parseInt(a/b) + ".";
 
 a %= b;
-for (i=1; i<20; i++) {
+for (i=1; i<=20; i++) {
     a *=10;
     result += parseInt(a/b);
 
