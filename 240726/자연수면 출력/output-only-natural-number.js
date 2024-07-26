@@ -10,7 +10,7 @@ if (a>0) {
         result += a;
     }
 } else {
-    result =a;
+    result =0;
 }
 
 console.log(result);
