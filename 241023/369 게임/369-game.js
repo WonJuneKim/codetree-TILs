@@ -9,7 +9,7 @@ for (let i = 1; i <= n; i++) {
     else if( i %10 ===3 || i%10 ===6 || i%10 ===9 ) {
         result += "0 ";
     }
-    else if(parseInt(i/10) ===3 || parseInt(i/10) ===6 || parseInt(i/9)===9  ) {
+    else if(parseInt(i/10) ===3 || parseInt(i/10) ===6 || parseInt(i/10)===9  ) {
         result += "0 ";
     }
     else {
