@@ -12,7 +12,7 @@
 
 |교재|이름|난이도|상태|최근 제출 코드|
 |---|---|:---:|:---:|---|
-|[Novice Low / 단순 반복문 / for 안의 if](https://www.codetree.ai/missions?missionId=4)|[[연습]369 게임](https://www.codetree.ai/missions/4/problems/369-game)|![어려움][hard]|![Passed][passed]|[링크](https://github.com/WonJuneKim/codetree-TILs/blob/main/241023/369%20%EA%B2%8C%EC%9E%84/369-game.js)|
+|[Novice Low / 단순 반복문 / 반복문 안의 if](https://www.codetree.ai/missions?missionId=4)|[[연습]369 게임](https://www.codetree.ai/missions/4/problems/369-game)|![어려움][hard]|![Passed][passed]|[링크](https://github.com/WonJuneKim/codetree-TILs/blob/main/241023/369%20%EA%B2%8C%EC%9E%84/369-game.js)|
 
 
 * 획득 경험치: 해설을 보지 않고 푼 문제에 한해 최초 1회 경험치를 획득하실 수 있습니다.
