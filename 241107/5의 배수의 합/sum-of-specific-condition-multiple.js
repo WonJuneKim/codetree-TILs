@@ -7,7 +7,7 @@ let b = Number(input[1]);
 if(a>=b) {
     let temp = a;
     a =b;
-    a =temp;
+    b =temp;
 }
 
 let sumVal = 0;
