@@ -6,9 +6,10 @@ let b = Number(input[1]);
 
 if(a>=b) {
     let temp = a;
-    b =a;
+    a =b;
     a =temp;
 }
+
 let sumVal = 0;
 
 for (let i=a; i<=b; i++) {
