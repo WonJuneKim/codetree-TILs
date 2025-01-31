@@ -7,7 +7,7 @@ let m = Number(input[1]);
 function findGcd(n,m) {
     let gcd = 0;
     for(let i =1; i<=Math.min(n,m); i++) {
-        if(n%1 ===0 && m%1 ===0){
+        if(n%i ===0 && m%i ===0){
             gcd =i;
         }
     }
