@@ -13,7 +13,7 @@ let a = Number(input[0]);
 let b = Number(input[1]);
 
 let sum = 0;
-for (i=a; i<=b; i++) {
+for (let i=a; i<=b; i++) {
     if(isPrime(i)) {
         sum += i;
     }
