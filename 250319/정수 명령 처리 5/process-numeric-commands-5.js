@@ -8,18 +8,18 @@ let arr= [];
 let output = [];
 
 for(let i =0; i<n; i++){
-    const parts = commands[i].split('');
+    const parts = commands[i].split(' ');
     const cmd = parts[0];
 
 
-if(cmd === 'push back') {
+if(cmd === 'push_back') {
     arr.push(Number(parts[1]));
-} else if(cmd === 'pop back') {
+} else if(cmd === 'pop_back') {
     arr.pop();
 } else if(cmd === 'size') {
     output.push(arr.length);
 } else if (cmd ==='get'){
-    output.push(arr[Number(parts[1])-1]);
+    output.push(arr[Number(parts[1]) - 1]);
 }
 }
 
