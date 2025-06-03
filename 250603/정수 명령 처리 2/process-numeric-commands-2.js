@@ -1,9 +1,3 @@
-const fs = require("fs");
-const input = fs.readFileSync(0).toString().trim().split('\n');
-
-const n = Number(input[0]);
-const commands = input.slice(1, n + 1);
-
 class Queue {
     constructor() {
         this.q = [];
@@ -39,9 +33,24 @@ class Queue {
     }
 }
 
-const queue = new Queue;
+const fs = require("fs");
+const input = fs.readFileSync(0).toString().trim().split('\n');
 
+const n = Number(input[0]);
+const q = new Queue;
 
-for (let i=1; i<=n; i++) {
-    queue.commands[i]
-}
+const commands = input.slice(1, n + 1);
+commands.forEach(command => {
+    if (command.startsWith("push")) {
+        const x = Number(command.split(" ")[1]);
+        q.push(x);
+    } else if (command === "pop") {
+        console.log(q.pop());
+    } else if (command === "size") {
+        console.log(q.size());
+    } else if (command === "empty") {
+        console.log(q.empty() ? 1 : 0);
+    } else {
+        console.log(q.front());
+    }  
+});
