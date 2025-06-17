@@ -10,4 +10,5 @@ for(let i =1; i<=n; i++) {
     answer += i + " ";
 }
 
-console.log(answer);
+console.log(answer.trim());
+
