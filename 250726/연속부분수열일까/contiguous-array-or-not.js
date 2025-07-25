@@ -12,7 +12,7 @@ let secondArr = input[2].split(" ").map(Number);
 let found = false;
 
 
-for (let i = 0; i<a-b; i++) {
+for (let i = 0; i<a-b+1; i++) {
     let isMatch = true;
 
     for (let j = 0; j<b; j++) {
