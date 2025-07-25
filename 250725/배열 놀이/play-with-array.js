@@ -6,8 +6,6 @@ let nArray = input[1].split(" ").map(Number);
 
 let found = false;
 
-let result = "";
-
 for(let i = 2; i<q+2; i++) {
     let [type, a, b] = input[i].split(" ").map(Number);
 
@@ -24,6 +22,7 @@ for(let i = 2; i<q+2; i++) {
         if(!found) console.log(0);
     } else {
         let s = a, e=b;
+        let result = "";
 
         for(let j = s-1; j<e; j++) {
             result += nArray[j] + " ";
