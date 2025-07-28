@@ -7,24 +7,16 @@ let arr = input[1].split(" ").map(Number);
 //중복되는지 한번 더 체크??
 
 let maxVal = -1;
+let cnt = 0;
 
 for (let i = 0; i<n; i++) {
     if(arr[i] > maxVal) {
         maxVal = arr[i];
-    }
-
-    let cnt = 0;
-
-    for(let j = 0; j<n; j++) {
-        if(arr[j] === maxVal) {
-            cnt++;
-        }
-
-        if(cnt >1) {
-            maxVal = -1;
-            break;
-        }
+        cnt = 1;
+        
+    } else if (arr[i] === maxVal) {
+        cnt++;
     }
 }
 
-console.log(maxVal);
+console.log(cnt ===1 ? maxVal : -1);
