@@ -6,14 +6,9 @@ let arr = input[1].split(" ").map(Number);
 
 let minVal = arr[1] - arr[0];
 
-for(let i =0; i<n; i++) {
-    for(let j = i+1; j<n; j++) {
-        let minDiff = arr[j] - arr[i];
-
-        if(minVal > minDiff) {
-            minVal = minDiff;
-        }
-        
+for(let i = 2; i<n; i++) {
+    if(minVal > arr[i] - arr[i-1]) {
+        minVal = arr[i] - arr[i-1];
     }
 }
 
