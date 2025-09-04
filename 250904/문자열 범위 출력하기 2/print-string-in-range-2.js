@@ -8,7 +8,7 @@ let n = str.length;
 let answer = "";
 
 if(num > n) {
-    n = num;
+    num = n;
 }
 
 for(let i = n-1; i>=n-num; i--) {
