@@ -7,6 +7,10 @@ let num = Number(input[1]);
 let n = str.length;
 let answer = "";
 
+if(num > n) {
+    n = num;
+}
+
 for(let i = n-1; i>=n-num; i--) {
     answer += str[i];
 }
