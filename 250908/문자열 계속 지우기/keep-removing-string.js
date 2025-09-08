@@ -9,9 +9,7 @@ for (let i = 0; i<a.length; i++) {
     let idx = a.indexOf(b);
 
     if(idx === -1) break;
-    ans = a.slice(0, idx) + a.slice(idx+b.length);
-
-    a = ans;
+    a = a.slice(0, idx) + a.slice(idx+b.length);
 
 
 }
