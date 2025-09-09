@@ -8,7 +8,7 @@ for(let i = 0; i<input.length; i++) {
 
     if(ch>="A" && ch<="Z") {
         ans+= ch.toLowerCase();
-    } else if(ch>"a" && ch<="z") {
+    } else if(ch>="a" && ch<="z") {
         ans += ch.toUpperCase();
     }
 }
