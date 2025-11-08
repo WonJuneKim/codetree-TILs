@@ -1,10 +1,11 @@
 const fs = require("fs");
 let input = fs.readFileSync(0).toString().trim().split("\n");
 
+let n = input[0];
 let sum = 0;
 
-for (let elem of input) {
-    sum += Number(elem);
+for (let i = 1; i<=n; i++) {
+    sum += Number(input[i]);
 }
 
 let sumStr = sum.toString();
