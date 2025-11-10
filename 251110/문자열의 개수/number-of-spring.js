@@ -16,6 +16,6 @@ while(input[i] !=='0') {
 
 console.log(cnt);
 
-for(let j = 0; ijarr.length; j++) {
+for(let j = 0; j<arr.length; j++) {
     console.log(arr[j]);
 }
