@@ -10,7 +10,7 @@ function printRect(n) {
             if(cnt === 10) {
                 cnt = 1;
             }
-            process.stdout.write(String(cnt)+" ");
+            process.stdout.write(cnt+" ");
             cnt++;
         }
         process.stdout.write("\n");
