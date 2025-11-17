@@ -1,9 +1,9 @@
-function print5Stars() {
+function print10Stars() {
     process.stdout.write("**********" + "\n");
 }
 
-print5Stars();
-print5Stars();
-print5Stars();
-print5Stars();
-print5Stars();
+print10Stars();
+print10Stars();
+print10Stars();
+print10Stars();
+print10Stars();
