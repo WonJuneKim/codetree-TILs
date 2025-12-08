@@ -13,7 +13,7 @@ function gcd(a, b) {
             result = i;
         }
     }
-    console.log(result);
+    process.stdout.write(result+ "\n");
 }
 
 gcd(n, m);
