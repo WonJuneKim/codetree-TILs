@@ -38,7 +38,7 @@ switch (o) {
     break;
 
     case "/":
-    result = divide(a,c);
+    result = parseInt(divide(a,c));
     break;
 
 }
