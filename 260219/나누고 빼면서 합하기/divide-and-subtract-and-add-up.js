@@ -4,18 +4,17 @@ const [n, m] = input[0].split(" ").map(Number);
 const A = input[1].split(" ").map(Number);
 
 
-function calculate(m) {
+function calculate(x) {
     let sum = 0;
 
-    while (m>1) {
-        sum += A[m];
-        if(m===1) break;
-        if(m%2 !==0) {
-            m -= 1;
-            sum+= A[m];
+    while (x>=1) {
+        sum += A[x-1];
+
+        if(x%2 !==0) {
+            x -= 1;
         } else {
-            m /=2;
-            sum+= A[m];
+            x /=2;
+
         }
     }
     return sum;
