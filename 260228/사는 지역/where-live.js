@@ -19,6 +19,12 @@ for(let i = 0; i<n; i++) {
     people.push(new Person(name, addr, city));
 }
 
+people.sort((a,b) =>{
+    if(a.name>b.name) return 1;
+    if(a.name<b.name) return -1;
+    return 0;
+})
+
 console.log(`name ${people[n-1].name}`);
 console.log(`addr ${people[n-1].addr}`);
 console.log(`city ${people[n-1].city}`);
