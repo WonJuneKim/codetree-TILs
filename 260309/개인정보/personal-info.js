@@ -17,29 +17,29 @@ for (let i = 0; i < 5; i++) {
   students.push(new Student(name, height, weight));
 }
 
-function cmpName(a,b) {
-    if(a.name > b.name) return 1;
-    if(a.name < b.name) return -1;
-    return 0;
-}
+// function cmpName(a,b) {
+//     if(a.name > b.name) return 1;
+//     if(a.name < b.name) return -1;
+//     return 0;
+// }
 
 
-function cmpHeight(a,b) {
-    return b.height - a.height;
-}
+// function cmpHeight(a,b) {
+//     return b.height - a.height;
+// }
 
 const byName = [...students];
 const byHeight = [...students];
 
 
-byName.sort(cmpName);
+byName.sort((a,b)=> a.name > b.name ? 1 : -1);
 console.log("name");
 byName.forEach(student=> {
     console.log(`${student.name} ${student.height} ${student.weight}`);
 })
 
 console.log();
-byHeight.sort(cmpHeight);
+byHeight.sort((a,b) => b.height - a.height);
 console.log("height");
 byHeight.forEach(student => {
    console.log(`${student.name} ${student.height} ${student.weight}`);
