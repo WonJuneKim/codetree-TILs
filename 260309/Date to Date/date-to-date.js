@@ -3,24 +3,19 @@ const input = fs.readFileSync(0).toString().trim().split('\n');
 
 const [m1, d1, m2, d2] = input[0].split(' ').map(Number);
 
-const num_of_days = [0, 31, 28, 31, 30, 31, 30, 31, 31, 30, 31, 30, 31];
+function numOfDays(m, d) {
+    const days = [0, 31, 28, 31, 30, 31, 30, 31, 31, 30, 31, 30, 31];
+    let totalDays = 0;
 
-// m2월 d2 일까지 날짜 - m1월 d1일 까지 날짜
+    for(let i =0; i<m; i++) {
+        totalDays += days[i];
+    }
 
-let targetDay =0;
+    totalDays += d;
 
-for(let i =0; i<m2; i++) {
-    targetDay +=num_of_days[i];
+    return totalDays;
 }
 
-targetDay += d2;
+const totalDays = numOfDays(m2, d2) - numOfDays(m1, d1) +1;
 
-let startDay =0;
-
-for(let i =0; i<m1; i++) {
-    startDay +=num_of_days[i];
-}
-
-startDay += d1;
-
-console.log(targetDay-startDay+1);
+console.log(totalDays);
