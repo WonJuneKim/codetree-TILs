@@ -28,17 +28,20 @@ function cmpHeight(a,b) {
     return b.height - a.height;
 }
 
+const byName = [...students];
+const byHeight = [...students];
 
-students.sort(cmpName);
+
+byName.sort(cmpName);
 console.log("name");
-students.forEach(student=> {
+byName.forEach(student=> {
     console.log(`${student.name} ${student.height} ${student.weight}`);
 })
 
 console.log();
-students.sort(cmpHeight);
+byHeight.sort(cmpHeight);
 console.log("height");
-students.forEach(student => {
+byHeight.forEach(student => {
    console.log(`${student.name} ${student.height} ${student.weight}`);
 })
 
