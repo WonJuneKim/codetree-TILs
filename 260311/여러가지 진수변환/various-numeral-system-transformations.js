@@ -5,7 +5,7 @@ let [n, b] = input[0].split(' ').map(Number);
 let digits = [];
 
 while (true) {
-    if(n<2) {
+    if(n<b) {
         digits.push(n);
         break;
     }
