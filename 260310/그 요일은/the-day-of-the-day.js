@@ -20,18 +20,18 @@ function numOfDays(m,d) {
     return total + d;
 }
 
-let targetDay = numOfDays(m2,d2);
-let startDay = numOfDays(m1,d1);
+let start = numOfDays(m1,d1);
+let end = numOfDays(m2,d2);
 
-let diff = ((targetDay - startDay) %7 +7) %7;
+const week = ["Mon", "Tue", "Wed", "Thu", "Fri", "Sat", "Sun"];
 
-// startDay가 월요일
+const target = week.indexOf(A);
 
-const day = ["Mon", "Tue", "Wed", "Thu", "Fri", "Sat", "Sun"];
+let count = 0;
 
-
-if(day[diff] === A) {
-    console.log(Math.floor((targetDay-startDay)/7) +1);
-} else {
-    console.log(Math.floor((targetDay-startDay)/7));
+for(let i =start; i<=end; i++) {
+    const diff =(i-start) %7;
+    if(diff === target)count++;
 }
+
+console.log(count);
