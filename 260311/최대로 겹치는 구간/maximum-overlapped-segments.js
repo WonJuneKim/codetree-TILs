@@ -8,19 +8,19 @@ for (let i = 1; i <= n; i++) {
 }
 
 //구간은 길이 (지점- 점 이 아님)
-
-const lines = Array(100).fill(0);
+const OFFSET = 100;
+const diff = Array(201+1).fill(0);
 
 for (let [a,b] of segments) {
-    for(let i = a-1; i<b-1; i++) {
-        lines[i] += 1;
-    }
+    diff[a+OFFSET] +=1;
+    diff[b+OFFSET] -=1;
 }
 
 let max = 0;
-for(let i =0; i<lines.length; i++) {
-    if(lines[i] > max) {
-        max = lines[i];
-    }
+let current = 0;
+
+for(let i =0; i<diff.length; i++) {
+    current += diff[i];
+    if(current > max) max = current;
 }
 console.log(max);
