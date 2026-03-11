@@ -17,5 +17,10 @@ for (let [a,b] of segments) {
     }
 }
 
-let answer = Math.max(...lines);
-console.log(answer);
+let max = 0;
+for(let i =0; i<lines.length; i++) {
+    if(lines[i] > max) {
+        max = lines[i];
+    }
+}
+console.log(max);
