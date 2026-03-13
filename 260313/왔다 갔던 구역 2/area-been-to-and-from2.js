@@ -34,7 +34,7 @@ for(let i =0; i<size; i++) {
 }
 
 let answer = 0;
-for(let i =0; i<dsize; i++) {
+for(let i =0; i<size; i++) {
     if(diff[i]>=2) answer++;
 }
 
