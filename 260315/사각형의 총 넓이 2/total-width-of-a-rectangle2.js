@@ -5,7 +5,7 @@ const n = Number(input[0]);
 const rects = input.slice(1, n + 1).map(line => line.split(' ').map(Number));
 
 const OFFSET = 100;
-const SIZE = 2* OFFSET;
+const SIZE = 2* OFFSET+1;
 const sheets = Array.from({length: SIZE}, ()=>Array(SIZE).fill(0));
 
 for(let [x,y,a,b] of rects) {
