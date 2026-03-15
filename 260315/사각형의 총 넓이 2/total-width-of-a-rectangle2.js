@@ -4,7 +4,8 @@ const input = fs.readFileSync(0).toString().trim().split('\n');
 const n = Number(input[0]);
 const rects = input.slice(1, n + 1).map(line => line.split(' ').map(Number));
 
-const SIZE = 100;
+const OFFSET = 100;
+const SIZE = 2* OFFSET;
 const sheets = Array.from({length: SIZE}, ()=>Array(SIZE).fill(0));
 
 for(let [x,y,a,b] of rects) {
