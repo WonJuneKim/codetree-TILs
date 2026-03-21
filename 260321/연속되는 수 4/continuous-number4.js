@@ -8,7 +8,7 @@ let ans = 1;
 let cnt = 1;
 
 for(let i=1; i<n; i++) {
-    if(arr[n] > arr[n-1]) {
+    if(arr[i] > arr[i-1]) {
         cnt++;
     } else {
         cnt = 1;
