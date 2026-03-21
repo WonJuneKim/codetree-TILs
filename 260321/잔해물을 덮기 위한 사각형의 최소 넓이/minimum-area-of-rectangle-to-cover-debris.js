@@ -53,4 +53,8 @@ for(let i =0; i<SIZE; i++) {
     }
 }
 
-console.log((maxX-minX+1)*(maxY-minY+1));
+if (maxX === -1) {
+    console.log(0);
+} else {
+    console.log((maxX - minX + 1) * (maxY - minY + 1));
+}
